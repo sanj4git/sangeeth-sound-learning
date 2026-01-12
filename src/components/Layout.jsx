@@ -26,7 +26,7 @@ export default function Layout({ children }) {
           flexWrap: "wrap",
         }}
       >
-        {/* App name */}
+        {/* App name / logo */}
         <Link
           to="/"
           style={{
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
           🎵 Sangeeth
         </Link>
 
-        {/* Right side controls */}
+        {/* Right-side controls */}
         <div
           style={{
             display: "flex",
@@ -55,7 +55,7 @@ export default function Layout({ children }) {
             </span>
           )}
 
-          {/* Volume */}
+          {/* Volume control */}
           <label
             style={{
               display: "flex",
@@ -76,7 +76,7 @@ export default function Layout({ children }) {
             />
           </label>
 
-          {/* Brightness */}
+          {/* Brightness control */}
           <label
             style={{
               display: "flex",
@@ -100,7 +100,12 @@ export default function Layout({ children }) {
       </header>
 
       {/* MAIN CONTENT */}
-      <main style={{ flex: 1, padding: "24px" }}>
+      <main
+        style={{
+          flex: 1,
+          padding: "24px",
+        }}
+      >
         {children}
       </main>
 
@@ -108,26 +113,48 @@ export default function Layout({ children }) {
       <footer
         style={{
           borderTop: "1px solid #ddd",
-          padding: "16px",
+          padding: "12px 24px",
           background: "#fafafa",
           display: "flex",
-          justifyContent: "center",
-          gap: "24px",
+          justifyContent: "space-between",
+          alignItems: "center",
           flexWrap: "wrap",
+          gap: "12px",
         }}
       >
-        <Link to="/" style={{ color: "#555", textDecoration: "none" }}>
-          Home
-        </Link>
-        <Link to="/learn" style={{ color: "#555", textDecoration: "none" }}>
-          Learn
-        </Link>
-        <Link to="/play" style={{ color: "#555", textDecoration: "none" }}>
-          Play
-        </Link>
-        <Link to="/info" style={{ color: "#555", textDecoration: "none" }}>
-          Info
-        </Link>
+        {/* Navigation links */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "24px",
+            flexWrap: "wrap",
+          }}
+        >
+          <Link to="/" style={{ color: "#555", textDecoration: "none" }}>
+            Home
+          </Link>
+          <Link to="/learn" style={{ color: "#555", textDecoration: "none" }}>
+            Learn
+          </Link>
+          <Link to="/play" style={{ color: "#555", textDecoration: "none" }}>
+            Play
+          </Link>
+          <Link to="/info" style={{ color: "#555", textDecoration: "none" }}>
+            Info
+          </Link>
+        </div>
+
+        {/* Author info */}
+        <div
+          style={{
+            fontSize: "13px",
+            color: "#777",
+            whiteSpace: "nowrap",
+          }}
+        >
+          Sanjay AR · CB.SC.U4CSE23052
+        </div>
       </footer>
     </div>
   );
