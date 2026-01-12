@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import NamePrompt from "../components/NamePrompt";
 import SettingsPanel from "../components/SettingsPanel";
+import useAudioPlayer from "../hooks/useAudioPlayer";
+import { instruments } from "../data/instruments";
+
 
 export default function Home() {
 
     const [hasName, setHasName] = useState(false);
     const [name, setName] = useState("");
     const [showSettings, setShowSettings] = useState(false);
+    const { playSound } = useAudioPlayer();
 
     useEffect(() => {
         const storedName = localStorage.getItem("sangeeth_name");
@@ -46,6 +50,7 @@ export default function Home() {
             { showSettings && (
               <SettingsPanel onClose={ () => setShowSettings(false) } />
             )}
+
 
             {/* Buttons come later */}
         </div>
