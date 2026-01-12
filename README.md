@@ -1,16 +1,52 @@
-# React + Vite
+# 🎵 Sangeeth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sangeeth is a web-based learning application designed to help children—especially autistic children—explore and recognize musical instruments in a calm, inclusive, and pressure-free environment.
 
-Currently, two official plugins are available:
+The app focuses on **learning through exploration**, **gentle guidance**, and **sensory control**, rather than testing or failure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎧 Learn Mode
+- Explore musical instruments one at a time
+- Large instrument images paired with sound
+- Sounds can be replayed freely
+- No time limits or pressure
 
-## Expanding the ESLint configuration
+### 🎮 Play Mode
+- Listen to a sound and choose the matching instrument
+- No “wrong answer” feedback
+- Gentle visual hints guide the learner
+- Positive reinforcement on correct choices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔊 Volume Control
+- Adjust sound instantly from the header
+- Changes apply across the entire app
+- Can be modified mid-play or mid-learn
+
+### ☀️ Brightness Control
+- Adjust screen brightness to reduce sensory discomfort
+- Applies globally to all pages
+
+### 👋 Personalized Greeting
+- Optional name input
+- Greeting appears consistently across pages
+
+### ♿ Autism-Inclusive Design
+- No timers or countdowns
+- No negative feedback
+- Predictable layouts
+- Calm visuals and subtle transitions
+- User-controlled pacing
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Vite)
+- **Context API** (global settings)
+- **HTML5 Audio API**
+- **LocalStorage** (preferences persistence)
+
+---
