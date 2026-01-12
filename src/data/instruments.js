@@ -8,7 +8,7 @@ import trumpetSound from "../assets/sounds/trumpet.mp3";
 import xylophoneSound from "../assets/sounds/xylophone.mp3";
 
 // images
-import pianoImg from "../assets/instruments/piano.jpg";
+import pianoImg from "../assets/instruments/piano.JPG";
 import drumImg from "../assets/instruments/drums.jpg";
 import fluteImg from "../assets/instruments/flute.jpg";
 import guitarImg from "../assets/instruments/guitar.png";
