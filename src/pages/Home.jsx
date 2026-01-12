@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import NamePrompt from "../components/NamePrompt";
+import SettingsPanel from "../components/SettingsPanel";
 
 export default function Home() {
 
     const [hasName, setHasName] = useState(false);
     const [name, setName] = useState("");
+    const [showSettings, setShowSettings] = useState(false);
 
     useEffect(() => {
         const storedName = localStorage.getItem("sangeeth_name");
@@ -36,6 +38,14 @@ export default function Home() {
             <p>
                 Choose a mode to begin
             </p>
+
+            <button onClick = { () => setShowSettings(true)}>
+              Settings
+            </button>
+
+            { showSettings && (
+              <SettingsPanel onClose={ () => setShowSettings(false) } />
+            )}
 
             {/* Buttons come later */}
         </div>
